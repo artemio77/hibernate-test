@@ -1,0 +1,13 @@
+spring:
+  main:
+    banner-mode: off
+  jpa:
+    hibernate.ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        use_sql_comments: true
+        format_sql: true
+        enable_lazy_load_no_trans: true
+  datasource:
+    url: jdbc:tc:postgresql:12.4-alpine:///

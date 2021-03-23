@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  flyway:
+    baseline-on-migrate: true
+  jpa:
+    database: postgresql
+    hibernate.ddl-auto: create
+    open-in-view: false
+    properties:
+      hibernate:
+        order_inserts: true
+        order_updates: true
+        enable_lazy_load_no_trans: true
+  data:
+    jpa:
+      repositories:
+        bootstrap-mode: default
